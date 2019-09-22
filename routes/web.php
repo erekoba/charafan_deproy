@@ -67,7 +67,7 @@ Route::get('/chara_entry',function(){
 });
 
 Route::get('/chara_top',function(){
-    $charas=Chara::where('id',4)->get();
+    $charas=Chara::where('chara_id',1)->get();
     return view('chara_top',['charas'=>$charas]);
 });
 
